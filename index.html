@@ -4,12 +4,252 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechStore - Sua Loja Virtual</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --text-color: #333;
+            --bg-color: #f8f9fa;
+        }
 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+        }
+
+        header {
+            background: var(--primary-color);
+            padding: 1rem 2rem;
+            color: white;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: white;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+
+        .logo:hover {
+            opacity: 0.9;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            padding: 0.5rem;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+
+        .nav-menu a:hover {
+            background: rgba(255,255,255,0.1);
+        }
+
+        .search-container {
+            max-width: 600px;
+            flex-grow: 1;
+            margin: 0 2rem;
+            position: relative;
+        }
+
+        #searchInput {
+            width: 100%;
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            border: 1px solid #ddd;
+            font-size: 1rem;
+            background: white;
+            transition: box-shadow 0.3s;
+        }
+
+        #searchInput:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(52,152,219,0.3);
+        }
+
+        .cart-icon {
+            position: relative;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+
+        .cart-icon::after {
+            content: '🛒';
+            font-size: 1.5rem;
+        }
+
+        .cart-count {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            background: var(--accent-color);
+            color: white;
+            padding: 3px 8px;
+            border-radius: 50%;
+            font-size: 0.8rem;
+        }
+
+        .categories {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            padding: 6rem 1rem 1rem;
+            flex-wrap: wrap;
+        }
+
+        .categories button {
+            padding: 0.8rem 1.5rem;
+            border: none;
+            background: var(--secondary-color);
+            color: white;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: 500;
+        }
+
+        .categories button:hover {
+            background: #2980b9;
+            transform: translateY(-2px);
+        }
+
+        .categories button.active {
+            background: var(--accent-color);
+        }
+
+        .products-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            padding: 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 200px;
+            object-fit: contain;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+            background: #f5f5f5;
+        }
+
+        .product-title {
+            margin: 0.5rem 0;
+            color: var(--primary-color);
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .product-price {
+            color: var(--accent-color);
+            font-weight: 700;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
+        .whatsapp-button {
+            display: inline-block;
+            width: 100%;
+            padding: 0.8rem;
+            background: #25D366;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .whatsapp-button:hover {
+            background: #128C7E;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-wrap: wrap;
+                gap: 1rem;
+                padding: 1rem;
+            }
+
+            .nav-menu {
+                order: 3;
+                width: 100%;
+                justify-content: center;
+                display: none;
+            }
+
+            .nav-menu.active {
+                display: flex;
+            }
+
+            .search-container {
+                margin: 0;
+                width: 100%;
+                order: 2;
+            }
+
+            .categories {
+                padding-top: 8rem;
+            }
+        }
+
+        .loading {
+            padding: 2rem;
+            text-align: center;
+            font-size: 1.2rem;
+            color: var(--text-color);
+        }
+
+        .footer {
+            background: var(--primary-color);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 3rem;
+        }
+    </style>
 </head>
 <body>
-    
     <header>
         <a href="#" class="logo">TechStore</a>
         
@@ -24,7 +264,9 @@
             <input type="text" id="searchInput" placeholder="Pesquisar produtos...">
         </div>
         
-       
+        <div class="cart-icon">
+            <span class="cart-count">0</span>
+        </div>
     </header>
 
     <section class="categories">
@@ -35,50 +277,6 @@
         <button onclick="filterCategory('acessorios')">Acessórios</button>
     </section>
 
-
-<div class="products-container" id="productsContainer">
-    <div class="product-card" data-category="eletronicos">
-        <img src="tv.png" alt="Smartphone" class="product-image">
-        <h3 class="product-title">Smartphone</h3>
-        <p class="product-price">R$ 1999.90</p>
-        <a href="https://wa.me/75981974266/?text=Eu quero esse produto (Mochila Escolar de 90,00)" class="whatsapp-button">Fazer pedido</a>
-    </div>
-    <div class="product-card" data-category="eletronicos">
-        <img src="tv.png" alt="Smartphone" class="product-image">
-        <h3 class="product-title">Smartphone</h3>
-        <p class="product-price">R$ 1999.90</p>
-        <a href="https://wa.me/75981974266/?text=Eu quero esse produto (Mochila Escolar de 90,00)" class="whatsapp-button">Fazer pedido</a>
-    </div>
-    <div class="product-card" data-category="eletronicos">
-        <img src="tv.png" alt="Smartphone" class="product-image">
-        <h3 class="product-title">Smartphone</h3>
-        <p class="product-price">R$ 1999.90</p>
-        <a href="https://wa.me/75981974266/?text=Eu quero esse produto (Mochila Escolar de 90,00)" class="whatsapp-button">Fazer pedido</a>
-    </div>
-    <div class="product-card" data-category="eletronicos">
-        <img src="tv.png" alt="Smartphone" class="product-image">
-        <h3 class="product-title">Smartphone</h3>
-        <p class="product-price">R$ 1999.90</p>
-        <a href="https://wa.me/75981974266/?text=Eu quero esse produto (Mochila Escolar de 90,00)" class="whatsapp-button">Fazer pedido</a>
-    </div>
-    <div class="product-card" data-category="eletronicos">
-        <img src="tv.png" alt="Smartphone" class="product-image">
-        <h3 class="product-title">Smartphone</h3>
-        <p class="product-price">R$ 1999.90</p>
-        <a href="https://wa.me/75981974266/?text=Eu quero esse produto (Mochila Escolar de 90,00)" class="whatsapp-button">Fazer pedido</a>
-    </div>
-    <div class="product-card" data-category="eletronicos">
-        <img src="tv.png" alt="Smartphone" class="product-image">
-        <h3 class="product-title">Smartphone</h3>
-        <p class="product-price">R$ 1999.90</p>
-        <a href="https://wa.me/75981974266/?text=Eu quero esse produto (Mochila Escolar de 90,00)" class="whatsapp-button">Fazer pedido</a>
-    </div>
-  
-  
-  
-  
-
-
     <div class="products-container" id="productsContainer">
         <!-- Produtos serão gerados via JavaScript -->
     </div>
@@ -87,6 +285,102 @@
         <p>&copy; 2024 TechStore. Todos os direitos reservados.</p>
     </footer>
 
-    
+    <script>
+        const products = [
+            { 
+                id: 1, 
+                name: 'Smartphone', 
+                category: 'eletronicos', 
+                price: 1999.90, 
+                image: 'smartphone.jpg',
+                whatsapp: '75981974266'
+            },
+            { 
+                id: 2, 
+                name: 'Notebook', 
+                category: 'eletronicos', 
+                price: 4599.90, 
+                image: 'notebook.jpg',
+                whatsapp: '75981974266'
+            },
+            { 
+                id: 3, 
+                name: 'Camiseta Premium', 
+                category: 'roupas', 
+                price: 89.90, 
+                image: 'camiseta.jpg',
+                whatsapp: '75981974266'
+            },
+            { 
+                id: 4, 
+                name: 'Tênis Esportivo', 
+                category: 'calcados', 
+                price: 299.90, 
+                image: 'tenis.jpg',
+                whatsapp: '75981974266'
+            },
+            { 
+                id: 5, 
+                name: 'Relógio Inteligente', 
+                category: 'acessorios', 
+                price: 599.90, 
+                image: 'relogio.jpg',
+                whatsapp: '75981974266'
+            }
+        ];
+
+        function renderProducts(productsArray) {
+            const container = document.getElementById('productsContainer');
+            container.innerHTML = '';
+
+            productsArray.forEach(product => {
+                const productCard = document.createElement('div');
+                productCard.className = 'product-card';
+                productCard.dataset.category = product.category;
+                productCard.innerHTML = `
+                    <img src="${product.image}" alt="${product.name}" class="product-image" 
+                         onerror="this.src='placeholder.jpg'">
+                    <h3 class="product-title">${product.name}</h3>
+                    <p class="product-price">R$ ${product.price.toFixed(2)}</p>
+                    <a href="https://wa.me/${product.whatsapp}?text=Estou interessado no produto: ${product.name}" 
+                       class="whatsapp-button" target="_blank">
+                        Comprar via WhatsApp
+                    </a>
+                `;
+                container.appendChild(productCard);
+            });
+        }
+
+        function filterCategory(category) {
+            document.querySelectorAll('.categories button').forEach(btn => 
+                btn.classList.remove('active'));
+            event.target.classList.add('active');
+
+            const filtered = category === 'all' 
+                ? products 
+                : products.filter(p => p.category === category);
+            
+            renderProducts(filtered);
+        }
+
+        function handleSearch() {
+            const query = this.value.toLowerCase();
+            const filtered = products.filter(p => 
+                p.name.toLowerCase().includes(query) ||
+                p.category.toLowerCase().includes(query)
+            );
+            renderProducts(filtered);
+        }
+
+        // Event Listeners
+        document.getElementById('searchInput').addEventListener('input', handleSearch);
+        document.querySelector('.cart-icon').addEventListener('click', () => {
+            // Implementar lógica do carrinho
+            alert('Carrinho em desenvolvimento!');
+        });
+
+        // Inicialização
+        renderProducts(products);
+    </script>
 </body>
 </html>

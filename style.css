@@ -84,28 +84,6 @@
             box-shadow: 0 0 0 3px rgba(52,152,219,0.3);
         }
 
-        .cart-icon {
-            position: relative;
-            cursor: pointer;
-            padding: 0.5rem;
-        }
-
-        .cart-icon::after {
-            content: '🛒';
-            font-size: 1.5rem;
-        }
-
-        .cart-count {
-            position: absolute;
-            top: -5px;
-            right: -5px;
-            background: var(--accent-color);
-            color: white;
-            padding: 3px 8px;
-            border-radius: 50%;
-            font-size: 0.8rem;
-        }
-
         .categories {
             display: flex;
             justify-content: center;
