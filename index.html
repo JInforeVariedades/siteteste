@@ -1,627 +1,92 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>J. Infor&Variedades</title>
+    <title>TechStore - Sua Loja Virtual</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 
 </head>
 <body>
+    
     <header>
-        <img src="relogio.png" alt="">
+        <a href="#" class="logo">TechStore</a>
+        
+        <nav class="nav-menu">
+            <a href="#">Início</a>
+            <a href="#">Produtos</a>
+            <a href="#">Sobre nós</a>
+            <a href="#">Contato</a>
+        </nav>
+        
         <div class="search-container">
-            <input type="text" placeholder="Pesquise produtos...">
-            <button>Buscar</button>
+            <input type="text" id="searchInput" placeholder="Pesquisar produtos...">
         </div>
+        
+       
     </header>
 
-    <h2 style="text-align: center; padding: 20px;">J. Infor&Variedades</h2>
-
-    <div class="container">
-        <div class="product">
-            <img src="escola8.png" alt="Produto 1">
-            <h3>Mochila Escolar</h3>
-            <p>R$ 90,00</p>
-            <a href="https://wa.me/75981974266/?text=Eu quero esse produto (Mochila Escolar de 90,00)" class="whatsapp-button">Fazer pedido</a>
-        </div>
-        <div class="product">
-            <img src="escola7.png" alt="Produto 2">
-            <h3>Mochila Escolar</h3>
-            <p>R$ 90,00</p>
-            <a href="https://wa.me/75981974266/?text=Eu quero esse produto (Mochila Escolar de 90,00)" class="whatsapp-button">Fazer pedido</a>
-        </div>
-        <div class="product">
-            <img src="escola6.png" alt="Produto 2">
-            <h3>Mochila Escolar</h3>
-            <p>R$ 90,00</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Mochila Escolar de 90,00)" class="whatsapp-button">Fazer pedido</a>
-        </div>
-        <div class="product">
-            <img src="escola (20).png" alt="Produto 2">
-            <h3>Caderno 15 matérias Capa Dura</h3>
-            <p>R$ 45,00</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Caderno 15 matérias Capa Dura de 45,00)" class="whatsapp-button">Fazer pedido</a>
-        </div>
-        <div class="product">
-            <img src="escola (13).png" alt="Produto 2">
-            <h3>Lápis de cor</h3>
-            <p>R$ 6,00</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Lápis de cor de de 6,00)" class="whatsapp-button">Fazer pedido</a>
-        </div>                      
-        <div class="product">
-            <img src="escola (15).png" alt="Produto 2">
-            <h3>Lápis de cor</h3>
-            <p>R$ 10,00</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Lápis de cor de 10,00)" class="whatsapp-button">Fazer pedido</a>
-        </div>
-
-        <div class="product">
-            <img src="escola (12).png" alt="Produto 2">
-            <h3>Canetas Coloridas</h3>
-            <p>R$ 25,00</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Canetas Coloridas de 25,00)" class="whatsapp-button">Fazer pedido</a>
-        </div>
-        <div class="product">
-            <img src="escola (14).png" alt="Produto 2">
-            <h3>Canetas Hidrocor</h3>
-            <p>R$ 10,00</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Canetas Hidrocor de 10,00)" class="whatsapp-button">Fazer pedido</a>
-        </div>
-        <div class="product">
-            <img src="compasso.png" alt="Produto 2">
-            <h3>Compasso Escolar</h3>
-            <p>R$ 9,00</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Compasso Escolar de 9,00)" class="whatsapp-button">Fazer pedido</a>
-        </div>
-      
-        <div class="product">
-            <img src="escola (23).png" alt="Produto 2">
-            <h3>Caderno 12 matérias Capa Dura</h3>
-            <p>R$ 42,00</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Caderno 12 matérias Capa Dura de 42,00)" class="whatsapp-button">Fazer pedido</a>
-        </div>
-        <div class="product">
-            <img src="escola (24).png" alt="Produto 2">
-            <h3>Caderno 12 matérias Capa Dura</h3>
-            <p>R$ 42,00</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Caderno 12 matérias Capa Dura de 42,00)" class="whatsapp-button">Fazer pedido</a>
-        </div>
-        <div class="product">
-            <img src="escola (25).png" alt="Produto 2">
-            <h3>Caderno 12 matérias Capa Dura</h3>
-            <p>R$ 42,00</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Caderno 12 matérias Capa Dura de 42,00)" class="whatsapp-button">Fazer pedido</a>
-        </div>
-
-        <div class="product">
-            <img src="escola (1).png" alt="Produto 2">
-            <h3>Caderno 12 matérias Capa Dura</h3>
-            <p>R$ 42,00</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Caderno 12 matérias Capa Dura de 42,00)" class="whatsapp-button">Fazer pedido</a>
-        </div>
-        <div class="product">
-            <img src="escola (22).png" alt="Produto 2">
-            <h3>Caderno 12 matérias Capa Dura</h3>
-            <p>R$ 42,00</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Caderno 12 matérias Capa Dura de 42,00)" class="whatsapp-button">Fazer pedido</a>
-        </div>
-        <div class="product">
-            <img src="caderno78.jpeg" alt="Produto 2">
-            <h3>Caderno 12 matérias Capa Dura</h3>
-            <p>R$ 42,00</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Caderno 12 matérias Capa Dura de 42,00)" class="whatsapp-button">Fazer pedido</a>
-        </div>
-        <div class="product">
-            <img src="escola (21).png" alt="Produto 2">
-            <h3>Caderno 15 matérias Capa Dura</h3>
-            <p>R$ 45,00</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Caderno 15 matérias Capa Dura de 42,00)" class="whatsapp-button">Fazer pedido</a>
-        </div>
-        <div class="product">
-            <img src="escola (16).png" alt="Produto 2">
-            <h3>Caderno 20 matérias Capa Dura</h3>
-            <p>R$ 65,00</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Caderno 20 matérias Capa Dura de 65,00)" class="whatsapp-button">Fazer pedido</a>
-        </div>
-        <div class="product">
-            <img src="escola (17).png" alt="Produto 2">
-            <h3>Caderno 20 matérias Capa Dura</h3>
-            <p>R$ 65,00</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Caderno 20 matérias Capa Dura de 65,00)" class="whatsapp-button">Fazer pedido</a>
-        </div>
-        <div class="product">
-            <img src="escola (18).png" alt="Produto 2">
-            <h3>Caderno 20 matérias Capa Dura</h3>
-            <p>R$ 65,00</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Caderno 20 matérias Capa Dura de 65,00)" class="whatsapp-button">Fazer pedido</a>
-        </div>
-        <div class="product">
-            <img src="escola (19).png" alt="Produto 2">
-            <h3>Caderno 20 matérias Capa Dura</h3>
-            <p>R$ 65,00</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Caderno 20 matérias Capa Dura de 65,00)" class="whatsapp-button">Fazer pedido</a>
-        </div>
-        <div class="product">
-            <img src="escola (4).png" alt="Produto 2">
-            <h3>Mochila Escolar</h3>
-            <p>R$ 55,00</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Mochila Escolar de 55,00)" class="whatsapp-button">Fazer pedido</a>
-        </div>
-        <div class="product">
-            <img src="escola (5).png" alt="Produto 2">
-            <h3>Mochila Escolar</h3>
-            <p>R$ 55,00</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Mochila Escolar de 55,00)" class="whatsapp-button">Fazer pedido</a>
-        </div>
-         <div class="product">
-            <img src="escola (1).jpeg" alt="Produto 2">
-            <h3>Kit Mochila + Estojo e Lancheira</h3>
-            <p>R$ 128,00</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Kit Mochila + Estojo e Lancheira de 128,00)" class="whatsapp-button">Fazer pedido</a>
-        </div>
-        <div class="product">
-            <img src="escola (2).jpeg" alt="Produto 2">
-            <h3>Kit Mochila + Estojo e Lancheira</h3>
-            <p>R$ 128,00</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Kit Mochila + Estojo e Lancheira de 128,00)" class="whatsapp-button">Fazer pedido</a>
-        </div>
-        <div class="product">
-            <img src="escola (3).jpeg" alt="Produto 2">
-            <h3>Tinta Guache</h3>
-            <p>R$ 1,50 Unidade (e caixa 8,00)</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Tinta guaxe de Unidade 1,50 (caixa 8,00)" class="whatsapp-button">Fazer pedido</a>
-        </div>
-        <div class="product">
-            <img src="box.png" alt="Produto 2">
-            <h3>Caixinha de som</h3>
-            <p>R$ 65,00</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Caixinha de som 65,00)" class="whatsapp-button">Fazer pedido</a>
-        </div>
-        <div class="product">
-            <img src="garrafa.png" alt="Produto 2">
-            <h3>Conjunto garrafa térmica + 3 xícaras de 500 ml</h3>
-            <p>R$ 40,00</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Conjunto garrafa térmica + 3 xícaras de 500 ml de 40,00)" class="whatsapp-button">Fazer pedido</a>
-        </div>
-        <div class="product">
-            <img src="bolsa.png" alt="Produto 2">
-            <h3>Bolsa térmica</h3>
-            <p>R$ 40,00</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Bolsa térmica de 40,00)" class="whatsapp-button">Fazer pedido</a>
-        </div>
-        <div class="product">
-            <img src="pochete.jpeg" alt="Produto 2">
-            <h3>Pochete</h3>
-            <p>R$ 20,00</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Pochete de 20,00)" class="whatsapp-button">Fazer pedido</a>
-        </div>
-        <div class="product">
-            <img src="porta.png" alt="Produto 2">
-            <h3>Porta jóias </h3>
-            <p>R$ 28,00</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Porta Jóias de 28,00)" class="whatsapp-button">Fazer pedido</a>
-        </div>
-        <div class="product">
-            <img src="pote.png" alt="Produto 2">
-            <h3>Humidificador de aroma ultrassônico com Led</h3>
-            <p>R$ 35,00</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Humidificador de aroma ultrassônico de 35,00)" class="whatsapp-button">Fazer pedido</a>
-        </div>
-        <div class="product">
-            <img src="agora (1).jpeg" alt="Produto 2">
-            <h3>Caneta Gel com Glitter</h3>
-            <p>R$ 4,00 a Unidade</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Caneta Gel com Glitter de 4,00 a unidade)" class="whatsapp-button">Fazer pedido</a>
-        </div>
-        <div class="product">
-            <img src="agora (1).png" alt="Produto 2">
-            <h3>Lápis </h3>
-            <p>R$ 1,50 unidade</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Lápis de 1,50 a unidade)" class="whatsapp-button">Fazer pedido</a>
-        </div>
-        <div class="product">
-            <img src="agora (2).jpeg" alt="Produto 2">
-            <h3>Pincel</h3>
-            <p>R$ 2,50</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (pincel de 2,50 a unidade)" class="whatsapp-button">Fazer pedido</a>
-        </div>
-        <div class="product">
-            <img src="agora (2).png" alt="Produto 2">
-            <h3>Caneta</h3>
-            <p>R$ 1,50</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Caneta de 1,50 a unidade)" class="whatsapp-button">Fazer pedido</a>
-        </div>
-        <div class="product">
-            <img src="agora (5).png" alt="Produto 2">
-            <h3>Caneta</h3>
-            <p>R$ 3,00 a unidade</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Caneta de 3,00 a unidade)" class="whatsapp-button">Fazer pedido</a>
-        </div>
-        <div class="product">
-            <img src="agora (3).png" alt="Produto 2">
-            <h3>Piloto</h3>
-            <p>R$ 6,00 a unidade</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Piloto de 6,00 a unidade)" class="whatsapp-button">Fazer pedido</a>
-        </div>
-        <div class="product">
-            <img src="agora (4).png" alt="Produto 2">
-            <h3>Marca Texto</h3>
-            <p>R$ 2,00</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Marca Texto de 2,00 a unidade)" class="whatsapp-button">Fazer pedido</a>
-        </div>
-        <div class="product">
-            <img src="bracelete.jpeg" alt="Produto 2">
-            <h3>Bracelete</h3>
-            <p>R$ 40,00</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Bracelete de 40,00 )" class="whatsapp-button">Fazer pedido</a>
-        </div>
-        <div class="product2images">
-            <div class="image-container">
-                <img src="estojoat.jpeg" alt="Produto 1" class="active">
-                <img src="estojof.jpeg" alt="Produto 2">
-            </div>
-            
-            <button class="prev" onclick="prevImage()">&#10094;</button>
-            <button class="next" onclick="nextImage()">&#10095;</button>
-        
-            <h3>Estojos Escolar</h3>
-            <p>R$ 35,00</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Estojos Escolar R$ 35,00)" class="whatsapp-button">Fazer pedido</a>
-        </div>
-        <div class="product">
-            <img src="anel.png" alt="Produto 2">
-            <h3>Alianças</h3>
-            <p>R$ 30,00</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Caneta de 1,50 a unidade)" class="whatsapp-button">Fazer pedido</a>
-        </div>
-        <div class="product">
-            <img src="manta.png" alt="Produto 2">
-            <h3>Manta para Bebê</h3>
-            <p>R$ 42,00 a unidade</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Manta para Bebê de 42,00 a unidade)" class="whatsapp-button">Fazer pedido</a>
-        </div>
-        <div class="product">
-            <img src="55 (1).png" alt="Produto 2">
-            <h3>Flanela</h3>
-            <p>R$ 15,00</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Flanela de 15,00 a unidade)" class="whatsapp-button">Fazer pedido</a>
-        </div>
-        <div class="product">
-            <img src="pulseira.jpeg" alt="Produto 2">
-            <h3>Pulseira</h3>
-            <p>R$ 10,00</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Pulseira 10,00)" class="whatsapp-button">Fazer pedido</a>
-        </div>
-        <div class="product">
-            <img src="55 (2).png" alt="Produto 2">
-            <h3> Anel para Tranças e Penteados e Dreads </h3>
-            <p>R$ 10,00</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Anel para Tranças e Penteados e Dreads de 10,00 a unidade)" class="whatsapp-button">Fazer pedido</a>
-        </div>
-        <div class="product">
-            <img src="laço.jpeg" alt="Produto 2">
-            <h3>Laço para Cabelo</h3>
-            <p>R$ 20,00</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Laço para Cabelo de 20,00 )" class="whatsapp-button">Fazer pedido</a>
-        </div>
-        <div class="product">
-            <img src="dominog.jpeg" alt="Produto 2">
-            <h3>Dominó pedra grande</h3>
-            <p>R$ 45,00</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Dominó pedra grande de 45,00)" class="whatsapp-button">Fazer pedido</a>
-        </div>
-        <div class="product">
-            <img src="dominop.jpeg" alt="Produto 2">
-            <h3>Dominó pedra Pequena</h3>
-            <p>R$ 30,00</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Dominó pedra Pequena de 30,00)" class="whatsapp-button">Fazer pedido</a>
-        </div>
-        
-        <div class="product">
-            <img src="headp5.png" alt="Produto 2">
-            <h3>Fone de ouvido (Headphone)</h3>
-            <p>R$ 80,00</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Fone de ouvido de  80,00)" class="whatsapp-button">Fazer pedido</a>
-        </div>
-        <div class="product2images">
-            <div class="image-container">
-                <img src="estojo (5).jpeg" alt="Produto 1" class="active">
-                <img src="estojofundo.jpeg" alt="Produto 2">
-            </div>
-            
-            <button class="prev" onclick="prevImage()">&#10094;</button>
-            <button class="next" onclick="nextImage()">&#10095;</button>
-        
-            <h3>Estojos Escolar</h3>
-            <p>R$ 28,00</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Estojo Escolar R$ 28,00)" class="whatsapp-button">Fazer pedido</a>
-        </div>
-     
-        <div class="product">
-            <img src="caderneta.png" alt="Produto 2">
-            <h3>Caderneta</h3>
-            <p>R$ 13,00</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Caderneta de 13,00)" class="whatsapp-button">Fazer pedido</a>
-        </div>
-        <div class="product">
-            <img src="baralho.png" alt="Produto 2">
-            <h3>Baralho</h3>
-            <p>R$ 23,00</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Baralho de 25,00)" class="whatsapp-button">Fazer pedido</a>
-        </div>
-        <div class="product">
-            <img src="bomba.png" alt="Produto 2">
-            <h3>Bomba De Água Potátil</h3>
-            <p>R$ 35,00</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Bomba De Água Potátil de 35,00)" class="whatsapp-button">Fazer pedido</a>
-        </div>
-        <div class="product2images">
-            <div class="image-container">
-                <img src="estojo (1).jpeg" alt="Produto 1" class="active">
-                <img src="estojofundo2.jpeg" alt="Produto 2">
-            </div>
-            
-            <button class="prev" onclick="prevImage()">&#10094;</button>
-            <button class="next" onclick="nextImage()">&#10095;</button>
-        
-            <h3>Estojos Escolar</h3>
-            <p>R$ 28,00</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Estojo Escolar R$ 28,00)" class="whatsapp-button">Fazer pedido</a>
-        </div>
-
-        <div class="product">
-            <img src="carderno5 (1).png" alt="Produto 2">
-            <h3>Caderno 1/4 Capa Dura - Decorado 96 folhas</h3>
-            <p>R$ 13,50</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Caderno 1/4 Capa Dura - Decorado 96 folhas de 13,50 )" class="whatsapp-button">Fazer pedido</a>
-        </div>
-       
-        <div class="product">
-            <img src="colar.jpeg" alt="Produto 2">
-            <h3>Conjunto colar e brinco</h3>
-            <p>R$ 38,00</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Conjunto colar e brinco R$ 38,00)" class="whatsapp-button">Fazer pedido</a>
-        </div> 
-       
-        <div class="product">
-            <img src="carderno5 (2).png" alt="Produto 2">
-            <h3>Caderno 1/4 Capa Dura - Decorado 96 folhas</h3>
-            <p>R$ 13,50</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Caderno 1/4 Capa Dura - Decorado 96 folhas de 13,50 )" class="whatsapp-button">Fazer pedido</a>
-        </div>
-        <div class="product">
-            <img src="headp4.png" alt="Produto 2">
-            <h3>Fone de ouvido (Headphone)</h3>
-            <p>R$ 40,00</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Fone de ouvido de  40,00)" class="whatsapp-button">Fazer pedido</a>
-        </div>
-        <div class="product2images">
-            <div class="image-container">
-                <img src="estojo3.jpeg" alt="Produto 1" class="active">
-                <img src="estojo3s.jpeg" alt="Produto 2">
-            </div>
-            
-            <button class="prev" onclick="prevImage()">&#10094;</button>
-            <button class="next" onclick="nextImage()">&#10095;</button>
-        
-            <h3>Estojo Escolar</h3>
-            <p>R$ 35,00</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Estojo Escolar R$ 35,00)" class="whatsapp-button">Fazer pedido</a>
-        </div>
-        <div class="product">
-            <img src="caderno (1).jpeg" alt="Produto 2">
-            <h3>Caderno Capa Dura 20 matéria, 400 Folhas</h3>
-            <p>R$ 65,00</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Caderno Capa Dura 20 matéria, de 400 Folhas  40,00)" class="whatsapp-button">Fazer pedido</a>
-        </div>
-        <div class="product">
-            <img src="caderno (2).jpeg" alt="Produto 2">
-            <h3>Caderno Capa Dura 20 matéria, 400 Folhas</h3>
-            <p>R$ 65,00</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Caderno Capa Dura 20 matéria, de 400 Folhas  40,00)" class="whatsapp-button">Fazer pedido</a>
-        </div>
-        <div class="product2images">
-            <div class="image-container">
-                <img src="estojo (3).jpeg" alt="Produto 1" class="active">
-                <img src="estojofundo2.jpeg" alt="Produto 2">
-            </div>
-            
-            <button class="prev" onclick="prevImage()">&#10094;</button>
-            <button class="next" onclick="nextImage()">&#10095;</button>
-        
-            <h3>Estojos Escolar</h3>
-            <p>R$ 28,00</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Estojo Escolar R$ 28,00)" class="whatsapp-button">Fazer pedido</a>
-        </div>
-        <div class="product2images">
-            <div class="image-container">
-                <img src="estojo (2).jpeg" alt="Produto 1" class="active">
-                <img src="estojofundo2.jpeg" alt="Produto 2">
-            </div>
-            
-            <button class="prev" onclick="prevImage()">&#10094;</button>
-            <button class="next" onclick="nextImage()">&#10095;</button>
-        
-            <h3>Estojos Escolar</h3>
-            <p>R$ 28,00</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Estojo Escolar R$ 28,00)" class="whatsapp-button">Fazer pedido</a>
-        </div>
-        <div class="product2images">
-            <div class="image-container">
-                <img src="estojo (6).jpeg" alt="Produto 1" class="active">
-                <img src="estojofundo.jpeg" alt="Produto 2">
-            </div>
-            
-            <button class="prev" onclick="prevImage()">&#10094;</button>
-            <button class="next" onclick="nextImage()">&#10095;</button>
-        
-            <h3>Estojos Escolar</h3>
-            <p>R$ 28,00</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Estojo Escolar R$ 28,00)" class="whatsapp-button">Fazer pedido</a>
-        </div>
-        <div class="product">
-            <img src="caderno (2).jpeg" alt="Produto 2">
-            <h3>Caderno Capa Dura 20 matéria, 400 Folhas</h3>
-            <p>R$ 65,00</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Caderno Capa Dura 20 matéria, de 400 Folhas  40,00)" class="whatsapp-button">Fazer pedido</a>
-        </div>
-        <div class="product">
-            <img src="caderno19 (6).jpeg" alt="Produto 2">
-            <h3>Cadernos 10 matéria Capa Dura de 200 folhas </h3>
-            <p>R$ 38,00</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Cadernos 10 matéria Capa Dura de 200 folhas  38,00)" class="whatsapp-button">Fazer pedido</a>
-        </div>
-        <div class="product">
-            <img src="caderno19 (2).jpeg" alt="Produto 2">
-            <h3>Cadernos 10 matéria Capa Dura de 200 folhas </h3>
-            <p>R$ 38,00</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Cadernos 10 matéria Capa Dura de 200 folhas  38,00)" class="whatsapp-button">Fazer pedido</a>
-        </div>
-        <div class="product">
-            <img src="caderno19 (3).jpeg" alt="Produto 2">
-            <h3>Cadernos 10 matéria Capa Dura de 200 folhas </h3>
-            <p>R$ 38,00</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Cadernos 10 matéria Capa Dura de 200 folhas  38,00)" class="whatsapp-button">Fazer pedido</a>
-        </div>
-        <div class="product">
-            <img src="caderno19 (1).jpeg" alt="Produto 2">
-            <h3>Cadernos 10 matéria Capa Dura de 200 folhas </h3>
-            <p>R$ 38,00</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Cadernos 10 matéria Capa Dura de 200 folhas  38,00)" class="whatsapp-button">Fazer pedido</a>
-        </div>
-        <div class="product">
-            <img src="caderno19 (5).jpeg" alt="Produto 2">
-            <h3>Cadernos 10 matéria Capa Dura de 200 folhas </h3>
-            <p>R$ 38,00</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Cadernos 10 matéria Capa Dura de 200 folhas  38,00)" class="whatsapp-button">Fazer pedido</a>
-        </div>
-        <div class="product">
-            <img src="caderno19 (4).jpeg" alt="Produto 2">
-            <h3>Cadernos 10 matéria Capa Dura de 200 folhas </h3>
-            <p>R$ 38,00</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Cadernos 10 matéria Capa Dura de 200 folhas  38,00)" class="whatsapp-button">Fazer pedido</a>
-        </div>
-        <div class="product">
-            <img src="caderno19 (8).jpeg" alt="Produto 2">
-            <h3>Cadernos 10 matéria Capa Dura de 200 folhas </h3>
-            <p>R$ 38,00</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Cadernos 10 matéria Capa Dura de 200 folhas  38,00)" class="whatsapp-button">Fazer pedido</a>
-        </div>
-        <div class="product">
-            <img src="caderno19 (7).jpeg" alt="Produto 2">
-            <h3>Cadernos 10 matéria Capa Dura de 200 folhas </h3>
-            <p>R$ 38,00</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Cadernos 10 matéria Capa Dura de 200 folhas  38,00)" class="whatsapp-button">Fazer pedido</a>
-        </div>
-        <div class="product">
-            <img src="calculadora (2).jpeg" alt="Produto 2">
-            <h3>Calculadora KK-9633B </h3>
-            <p>R$ 35,00</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Calculadora KK-9633B de 35,00)" class="whatsapp-button">Fazer pedido</a>
-        </div>
-        <div class="product">
-            <img src="calculadora (1).jpeg" alt="Produto 2">
-            <h3>Calculadora CT- 912 </h3>
-            <p>R$ 35,00</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Calculadora CT- 912 de 35,00)" class="whatsapp-button">Fazer pedido</a>
-        </div>
-        <div class="product">
-            <img src="calculadora (3).jpeg" alt="Produto 2">
-            <h3>Calculadora KK-111 </h3>
-            <p>R$ 37,00</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Calculadora KK-111 de 37,00)" class="whatsapp-button">Fazer pedido</a>
-        </div>
-        <div class="product">
-            <img src="prod (4).jpeg" alt="Produto 2">
-            <h3>Garrafa térmica de 500 ml</h3>
-            <p>R$ 45,00</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Garrafa térmica de 500 ml de 45,00)" class="whatsapp-button">Fazer pedido</a>
-        </div>
-        <div class="product">
-            <img src="prod (1).jpeg" alt="Produto 2">
-            <h3>Copo infantil,com canudo e alça</h3>
-            <p>R$ 25,00</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Copo infantil,com canudo e alça de 25,00)" class="whatsapp-button">Fazer pedido</a>
-        </div>
-        <div class="product">
-            <img src="prod (2).jpeg" alt="Produto 2">
-            <h3>Copo Térmico </h3>
-            <p>R$ 70,00</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Copo Térmico de 70,00)" class="whatsapp-button">Fazer pedido</a>
-        </div>
-        <div class="product">
-            <img src="prod (3).jpeg" alt="Produto 2">
-            <h3>Kit Lancheira </h3>
-            <p>R$ 45,00</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Kit Lancheira de 45,00)" class="whatsapp-button">Fazer pedido</a>
-        </div>
-        <div class="product">
-            <img src="prod (3).jpeg" alt="Produto 2">
-            <h3>Kit Lancheira </h3>
-            <p>R$ 45,00</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Kit Lancheira de 45,00)" class="whatsapp-button">Fazer pedido</a>
-        </div>
-        <div class="product2images">
-            <div class="image-container">
-                <img src="borracha9 (1).jpeg" alt="Produto 1" class="active">
-                <img src="borracha9 (2).jpeg" alt="Produto 2">
-            </div>
-            
-            <button class="prev" onclick="prevImage()">&#10094;</button>
-            <button class="next" onclick="nextImage()">&#10095;</button>
-        
-            <h3>Borrachas Tons de verde e Pastel </h3>
-            <p>R$ 2,50</p>
-            <a href="https://wa.me/75981974266/?text=Olá, Eu quero esse produto (Borrachas Tons de verde e Pastel R$ 2,50)" class="whatsapp-button">Fazer pedido</a>
-        </div>
+    <section class="categories">
+        <button onclick="filterCategory('all')" class="active">Todos</button>
+        <button onclick="filterCategory('eletronicos')">Eletrônicos</button>
+        <button onclick="filterCategory('roupas')">Roupas</button>
+        <button onclick="filterCategory('calcados')">Calçados</button>
+        <button onclick="filterCategory('acessorios')">Acessórios</button>
+    </section>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   
-
-
-  
-
-   
-
-
-  
-
-
-
-
-
-
-
-
-      
+<div class="products-container" id="productsContainer">
+    <div class="product-card" data-category="eletronicos">
+        <img src="tv.png" alt="Smartphone" class="product-image">
+        <h3 class="product-title">Smartphone</h3>
+        <p class="product-price">R$ 1999.90</p>
+        <a href="https://wa.me/75981974266/?text=Eu quero esse produto (Mochila Escolar de 90,00)" class="whatsapp-button">Fazer pedido</a>
     </div>
-    <footer>
-        <p>&copy; 2025 J. Infor&Variedades</p>
-        <i class="fa fa-copyright" aria-hidden="true"></i>
-      </footer>
+    <div class="product-card" data-category="eletronicos">
+        <img src="tv.png" alt="Smartphone" class="product-image">
+        <h3 class="product-title">Smartphone</h3>
+        <p class="product-price">R$ 1999.90</p>
+        <a href="https://wa.me/75981974266/?text=Eu quero esse produto (Mochila Escolar de 90,00)" class="whatsapp-button">Fazer pedido</a>
+    </div>
+    <div class="product-card" data-category="eletronicos">
+        <img src="tv.png" alt="Smartphone" class="product-image">
+        <h3 class="product-title">Smartphone</h3>
+        <p class="product-price">R$ 1999.90</p>
+        <a href="https://wa.me/75981974266/?text=Eu quero esse produto (Mochila Escolar de 90,00)" class="whatsapp-button">Fazer pedido</a>
+    </div>
+    <div class="product-card" data-category="eletronicos">
+        <img src="tv.png" alt="Smartphone" class="product-image">
+        <h3 class="product-title">Smartphone</h3>
+        <p class="product-price">R$ 1999.90</p>
+        <a href="https://wa.me/75981974266/?text=Eu quero esse produto (Mochila Escolar de 90,00)" class="whatsapp-button">Fazer pedido</a>
+    </div>
+    <div class="product-card" data-category="eletronicos">
+        <img src="tv.png" alt="Smartphone" class="product-image">
+        <h3 class="product-title">Smartphone</h3>
+        <p class="product-price">R$ 1999.90</p>
+        <a href="https://wa.me/75981974266/?text=Eu quero esse produto (Mochila Escolar de 90,00)" class="whatsapp-button">Fazer pedido</a>
+    </div>
+    <div class="product-card" data-category="eletronicos">
+        <img src="tv.png" alt="Smartphone" class="product-image">
+        <h3 class="product-title">Smartphone</h3>
+        <p class="product-price">R$ 1999.90</p>
+        <a href="https://wa.me/75981974266/?text=Eu quero esse produto (Mochila Escolar de 90,00)" class="whatsapp-button">Fazer pedido</a>
+    </div>
+  
+  
+  
+  
+
+
+    <div class="products-container" id="productsContainer">
+        <!-- Produtos serão gerados via JavaScript -->
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 TechStore. Todos os direitos reservados.</p>
+    </footer>
+
     
 </body>
 </html>
